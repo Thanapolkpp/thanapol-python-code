@@ -2,7 +2,7 @@
 # DEMO 1: Basic Arithmetic Operators
 # =============================================================================
 
-print("=" * 50)
+print("=" * 50) # string * int = loopstring
 print("DEMO 1: Basic Arithmetic Operators")
 print("=" * 50)
 
