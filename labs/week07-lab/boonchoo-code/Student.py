@@ -26,6 +26,7 @@ class Student:
 # Creating objects (instances)
 student1 = Student("Alice", 20, "S001")
 student2 = Student("Bob", 19, "S002")
+student3 = Student("Pun",20,"S003")
 
 # Using methods
 print(student1.introduce())
