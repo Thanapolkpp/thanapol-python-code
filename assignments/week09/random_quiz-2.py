@@ -58,8 +58,47 @@ def get_divisibility_hint(number):
 
 def get_range_hint(number, current_min=1, current_max=100):
     # Return narrowed range around the number
-    pass
+    if number>0 or number <= 10:
+        range_hint = range(number -5,number+5)
+    elif number >=85:
+        range_hint = range(number -15,number+15)
+    elif number 
+    
+    
+    
+    return f"HINT : The Norrow range arount the number is {} "
 
 def get_thefirst_digit_hint(number):
     # Retun the first digit of the number
-    pass
+    frist_digit = number // 10 
+    return f"HINT : The frist digit is {frist_digit}"
+
+random_number = random.randint(1,100)
+round = 1
+while True:
+        guess_number = int(input(f"Attempt {round} Enter your guess:"))
+        if random_number == guess_number :
+            print(f"Congratulations! You won in {round} attempts!")
+            break
+
+        elif random_number < guess_number :
+            print("Too high! Try again.")
+
+        elif random_number > guess_number :
+            print("Too low! Try again.")    
+           
+        if round == 3 :
+            print(get_parity_hint(random_number))
+        elif round == 5:
+            print(get_divisibility_hint(random_number))
+        elif round == 7:
+            print(get_range_hint(random_number))
+        elif round == 10:
+            print(get_thefirst_digit_hint(random_number))
+        round+=1
+        
+
+
+        
+
+    
