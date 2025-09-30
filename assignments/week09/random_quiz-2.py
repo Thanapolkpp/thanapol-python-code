@@ -58,15 +58,14 @@ def get_divisibility_hint(number):
 
 def get_range_hint(number, current_min=1, current_max=100):
     # Return narrowed range around the number
-    if number>0 or number <= 10:
-        range_hint = range(number -5,number+5)
+    if number>0 or number >= 10:
+        range_hint = range(number -15,number+15)
     elif number >=85:
         range_hint = range(number -15,number+15)
-    elif number 
-    
-    
-    
-    return f"HINT : The Norrow range arount the number is {} "
+    else :
+        range_hint = range(number -15,number+15)
+
+    return f"HINT : The Norrow range arount the number is {range_hint} "
 
 def get_thefirst_digit_hint(number):
     # Retun the first digit of the number

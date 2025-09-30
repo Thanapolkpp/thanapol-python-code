@@ -29,7 +29,7 @@ Character Analysis:
 - Consonants: 23
 - Most frequent: 'o' (appears 4 times)
 
-Word Analysis:
+Word_Analysis:
 - Total words: 9
 - Longest word: "Quick" (5 letters)
 - Shortest word: "The" (3 letters)
@@ -47,3 +47,35 @@ Transformations:
 USE: len(), split(), count(), upper(), lower(), title(), slicing operations
 
 """
+
+
+def Character_analysis(char):
+    print("Character Analysis:")
+    deletes = char.replace(" ","")
+    char = char.lower()
+   
+    print(f"-Total characters: {len(char)} (with spaces),{len(deletes)} (without spaces)")
+    
+    vowel =[] 
+    count=0
+    consonant=0
+    for i in char :
+        if i =="a" or i=="o" or i=="e" or i=="i" or i=="u" :
+            count+=1
+            vowel.append(i)
+        else:
+            consonant+=1
+    print(f"-Vowels:{count} {tuple(vowel)}")
+    print(f"-Consonants:{consonant}")
+    print(f"Most frequent:  (appears times)")
+
+def Word_Analysis(char):
+    print("\nWord_Analysis")
+    print(f"-Total:{len(char.split())}")  
+
+
+
+print("=== TEXT ANALYSIS REPORT ===")
+text ="The Quick Brown Fox Jumps Over The Lazy Dog"
+Character_analysis(text)
+Word_Analysis(text)
