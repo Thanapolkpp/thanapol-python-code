@@ -1,5 +1,5 @@
 # Basic set operations
-fruits = {"apple", "banana", "orange", "grape"}
+fruits = {"apple", "banana", "orange", "grape"}             
 citrus = {"orange", "lemon", "lime", "grapefruit"}
 
 print(f"Fruits: {fruits}")

@@ -26,7 +26,7 @@ class BankAccount:
         return False
     
     # Property decorator for read-only access
-    @property
+    @property #ต้องทำผ่าน property เพื่อเข้าถึงข้อมูล
     def transaction_history(self):
         return self.__transaction_history.copy()
     
@@ -36,6 +36,8 @@ class BankAccount:
 # Usage example
 account = BankAccount("12345", 1000)
 print(account.get_balance())  # 1000
+
 account.deposit(500)
 account.withdraw(200)
 print(account)  # Account 12345: Balance $1300
+print(account.transaction_history) #ไม่ต้องมี () เข้าถึงโดยชื่อได้เลย

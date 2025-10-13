@@ -3,7 +3,7 @@ class ClassName:
     
     def __init__(self, parameters):
         # Constructor method
-        self.attribute = value
+        self.attribute = parameters
     
     def method_name(self):
         # Instance method
